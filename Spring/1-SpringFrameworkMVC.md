@@ -8,7 +8,7 @@ Spring Framework를 이용하면 <strong>Model, View, Controller</strong> 3가�
 
 <br>
 
-##MVC 형식의 Spring Framework 구조 
+## MVC 형식의 Spring Framework 구조 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/28748103/55096668-a9f71100-50fd-11e9-9780-94d73c648194.png">
 </p>
@@ -24,11 +24,11 @@ MVC의 핵심은 비즈니스 로직과 프레젠테이션 로직의 분리이�
 비즈니스 로직은 재사용 가능하도록 자바 클래스로 독립적으로 존재하며,
 뷰는 어떤 것이든 상관 없어야 한다. (JSP, Velocity, Freemarker ..) 
 
-##DispatcherServlet이란? 
+## DispatcherServlet이란? 
 Spring의 MVC는 다른 MVC 프레임워크와 마찬가지로 컨트롤러를 사용하여 요청을 처리한다. (request-driven) 중앙 서블릿이 요청을 컨트롤러로 디스패치하고 웹 어플리케이션 개발의 여러 기능을 제공한다. 하지만 Spring의 DispatcherServlet은 더 많은 일을 한다.<br>
  일단 Spring MVC는 <strong> DispatcherServlet의 등장으로 web.xml의 역할이 축소되었다. </strong> 서블릿을 URL로 활용하기 위해서는 web.xml에 등록해야 했지만 이제는 DispatcherServlet이 해당 어플리케이션으로 들어오는 요청을 모두 핸들링해준다. DispatcherServlet을 이용해 웹 개발을 한다면 앞으로 서블렛 파일을 만들 필요도 없고 @MVC의 혜택을 얻을 수 있다. <br> 
  DispatcherServlet을 이용한다는 것은 Spring에서 제공하는 @MVC를 이용하겠다는 뜻이다. @MVC는 설계자체를 모델1방식으로 할 수 없게 만드는 데다가 구현하기는 까다롭지만 활용성이 높다고 배웠던 모델2방식을 모델1보다 쉽게 만들 수 있도록 환경을 조성해준다. (@MVC로 코드를 작성하는 방식이 모델2와 비슷하여 모델2방식이라고 부른다) <br>
-##MVC 패턴의 흐름 
+## MVC 패턴의 흐름 
 ![image](https://user-images.githubusercontent.com/28748103/55096691-b2e7e280-50fd-11e9-8175-1d23f9c77aa1.png)
 
 1. 사용자는 인터넷 브라우저를 통해 웹사이트에 접속한다.<br>
@@ -43,14 +43,14 @@ HandlerMapping은 요청 URL에 매핑된 Controller를 선택해 DispatcherServ
 
 
 
-##DispatcherServlet의 개념 
+## DispatcherServlet의 개념 
 Servlet Container에서 HTTP 프로토콜을 통해 들어오는 모든 요청을 프레젠테이션 계층의 제일 앞에 둬서 중앙집중식으로 처리해주는 프론트 컨트롤러   
-*(Front Controller : 주로 서블릿 컨테이너의 제일 앞에서 서버로 들어오는 클라이언트의 모든 요청을 받아 처리해주는 컨트롤러이다. MVC 구조에서 함께 사용되는 패턴이다.)*   
+* (Front Controller : 주로 서블릿 컨테이너의 제일 앞에서 서버로 들어오는 클라이언트의 모든 요청을 받아 처리해주는 컨트롤러이다. MVC 구조에서 함께 사용되는 패턴이다.) *   
 클라이언트로부터 어떤 요청이 오면 Tomcat과 같은 Servlet Container가 요청을 받는다. 이때 제일 앞에서 서버로 들어오는 모든 요청을 처리하는 Front Controller를 Spring에서 정의하였고이를 Dispatcher-Servlet 이라고 한다.
 그래서 공통처리 작업을 Dispatcher 서블릿이 처리한 후에 적절한 세부 컨트롤러로 작업을 위임해준다. 
 
 <br>
---
+--  
 https://hunit.tistory.com/185  
 https://m.blog.naver.com/PostView.nhn?  blogId=yysvip&logNo=220137322793&proxyReferer=https%3A%2F%2Fwww.google.com%2F  
 http://springmvc.egloos.com/504151  
