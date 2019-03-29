@@ -45,10 +45,10 @@ HandlerMapping은 요청 URL에 매핑된 Controller를 선택해 DispatcherServ
 
 
 ## DispatcherServlet의 개념 
-Servlet Container에서 HTTP 프로토콜을 통해 들어오는 모든 요청을 프레젠테이션 계층의 제일 앞에 둬서 중앙집중식으로 처리해주는 프론트 컨트롤러   
-* (Front Controller : 주로 서블릿 컨테이너의 제일 앞에서 서버로 들어오는 클라이언트의 모든 요청을 받아 처리해주는 컨트롤러이다. MVC 구조에서 함께 사용되는 패턴이다.) *   
-클라이언트로부터 어떤 요청이 오면 Tomcat과 같은 Servlet Container가 요청을 받는다. 이때 제일 앞에서 서버로 들어오는 모든 요청을 처리하는 Front Controller를 Spring에서 정의하였고이를 Dispatcher-Servlet 이라고 한다.
-그래서 공통처리 작업을 Dispatcher 서블릿이 처리한 후에 적절한 세부 컨트롤러로 작업을 위임해준다. 
+Servlet Container에서 HTTP 프로토콜을 통해 들어오는 모든 요청을 프레젠테이션 계층의 제일 앞에 둬서 중앙집중식으로 처리해주는 프론트 컨트롤러    
+(Front Controller : 주로 서블릿 컨테이너의 제일 앞에서 서버로 들어오는 클라이언트의 모든 요청을 받아 처리해주는 컨트롤러이다. MVC 구조에서 함께 사용되는 패턴이다.)  
+클라이언트로부터 어떤 요청이 오면 Tomcat과 같은 Servlet Container가 요청을 받는다. 이때 제일 앞에서 서버로 들어오는 모든 요청을 처리하는 Front Controller를 Spring에서 정의하였고이를 Dispatcher-Servlet 이라고 한다.  
+그래서 공통처리 작업을 Dispatcher 서블릿이 처리한 후에 적절한 세부 컨트롤러로 작업을 위임해준다.  
 
 <br>
 ---
