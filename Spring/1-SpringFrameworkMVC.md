@@ -12,6 +12,7 @@ Spring Framework를 이용하면 <strong>Model, View, Controller</strong> 3가�
 <p align="center">
 <img src="https://user-images.githubusercontent.com/28748103/55096668-a9f71100-50fd-11e9-9780-94d73c648194.png">
 </p>
+
 1. 웹 브라우저에서 Controller로 요청을 한다.
 2. Controller는 Model로 구체화 작업을 한다. 
 3. Model은 JavaBean 역할로 Resource를 사용하고 받는다.
