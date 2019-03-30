@@ -51,8 +51,7 @@ Servlet Container에서 HTTP 프로토콜을 통해 들어오는 모든 요청�
 그래서 공통처리 작업을 Dispatcher 서블릿이 처리한 후에 적절한 세부 컨트롤러로 작업을 위임해준다.  
 
 <br>
--------------
-
+***
 https://hunit.tistory.com/185  
 https://m.blog.naver.com/PostView.nhn?  blogId=yysvip&logNo=220137322793&proxyReferer=https%3A%2F%2Fwww.google.com%2F  
 http://springmvc.egloos.com/504151  
