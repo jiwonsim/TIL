@@ -59,6 +59,8 @@ web.xml 또한 위처럼 변경해준다. 변경된 부분은 <code> servlet-map
  
  <br>
  라는 메시지를 뿜는다면?! 
+ 
+ 
  ![image](https://user-images.githubusercontent.com/28748103/55337193-29f3f100-54d9-11e9-8092-26b52ec3629d.png)
 이대로 따라하면 된다! 
   
