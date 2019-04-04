@@ -51,9 +51,13 @@ Run Configuration 설정을 위해 우측 상단에 위치한 Edit Configuration
 web.xml 또한 위처럼 변경해준다. 변경된 부분은 <code> servlet-mapping </code> 에서 ``` url-pattern ``` 부분이다. 
 
 🍄 잠깐만! 🍄  
-500 에러가 뜨면서<br>
- ```     Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'cacheManager' is defined
- ```  <br>
+500 에러가 뜨면서
+<br>
+ ```bash     
+ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'cacheManager' is defined
+ ```  
+ 
+ <br>
  라는 메시지를 뿜는다면?! 
  ![image](https://user-images.githubusercontent.com/28748103/55337193-29f3f100-54d9-11e9-8092-26b52ec3629d.png)
 이대로 따라하면 된다! 
